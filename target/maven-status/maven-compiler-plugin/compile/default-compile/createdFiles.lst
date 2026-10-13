@@ -1,0 +1,8 @@
+model\Student.class
+utils\Utils.class
+utils\Validates.class
+view\MenuView.class
+controller\StudentManager.class
+view\StudentIOHandler.class
+main\Main.class
+model\Person.class
