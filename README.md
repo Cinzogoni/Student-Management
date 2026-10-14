@@ -36,47 +36,20 @@ Hệ thống quản lý sinh viên được viết bằng ngôn ngữ Java, áp 
   - Thêm mới thông tin sinh viên vào hệ thống.
   - Hiển thị danh sách sinh viên hiện có theo định dạng bảng.
   - Cập nhật thông tin sinh viên dựa trên Mã sinh viên (ID).
-  - Xóa sinh viên khỏi hệ thống.
+  - Xóa sinh viên khỏi hệ thống theo ID.
 - [x] **Kiểm tra dữ liệu đầu vào (Input Validation)**:
-  - Đảm bảo Mã sinh viên không trùng lặp và tuân thủ định dạng.
-  - Ràng buộc định dạng Ngày sinh, Email, Số điện thoại.
-  - Ràng buộc điểm trung bình (GPA) nằm trong khoảng hợp lệ ($0.0 - 10.0$).
+  - Đảm bảo ID sinh viên không trùng lặp và tuân thủ định dạng.
+  - Ràng buộc định dạng Ngày sinh
+  - Ràng buộc điểm trung bình (GPA) nằm trong khoảng hợp lệ ($0.0 - 4.0$).
 - [x] **Kiến trúc mô-đun**:
   - Lớp `Person` làm nền tảng mở rộng cho các đối tượng khác trong tương lai (Ví dụ: `Teacher`, `Staff`).
-
----
-
-## 🚀 Hướng dẫn chạy chương trình
-
-### Yêu cầu hệ thống
-- **Java Development Kit (JDK)**: Phiên bản 8 trở lên.
-- **Apache Maven**: Phiên bản 3.6+
-
-### Các bước thực hiện
-
-1. **Clone repository về máy local:**
-   ```bash
-   git clone https://github.com/Cinzogoni/Student-Management.git
-   ```
-
-2. **Di chuyển vào thư mục dự án:**
-   ```bash
-   cd Student-Management
-   ```
-
-3. **Biên dịch và chạy ứng dụng qua Maven:**
-   ```bash
-   mvn clean compile
-   mvn exec:java -Dexec.mainClass="main.Main"
-   ```
-
----
 
 ## 🔮 Kế hoạch phát triển & Mở rộng (Roadmap)
 
 Dự án được thiết kế chuẩn mực để sẵn sàng nâng cấp cho các giai đoạn tiếp theo:
 
-- [ ] **v1.1 - Tìm kiếm & Lọc dữ liệu**:
+- [ ] **v1.1 - Tìm kiếm, lọc dữ liệu và thêm validates**:
+  - Validates điện thoại theo quốc gia/ nhà mạng
   - Tìm kiếm sinh viên theo Tên hoặc Mã SV.
   - Sắp xếp danh sách theo Tên (A-Z) hoặc theo GPA tăng/giảm dần.
 - [ ] **v1.2 - Lưu trữ dữ liệu lâu dài (Persistence)**:
@@ -91,4 +64,5 @@ Dự án được thiết kế chuẩn mực để sẵn sàng nâng cấp cho c
 ---
 
 ## 📝 Giấy phép (License)
+
 Dự án được xây dựng phục vụ mục đích học tập và thực hành Lập trình hướng đối tượng (OOP).

@@ -8,7 +8,7 @@ public class StudentManager {
     private final ArrayList<Student> studentList = new ArrayList<>();
 
     public ArrayList<Student> getStudentList() {
-        return studentList;
+        return new ArrayList<>(studentList);
     }
 
     public Student findById(String studentId) {
